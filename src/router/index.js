@@ -1,13 +1,15 @@
 import {createRouter, createWebHistory} from 'vue-router'
 
+import ChildPage from '@/components/ChildPage.vue';
 
+import ParentPage from '../components/ParentPage.vue'
 
 const routes =
 [
 
-    {path:'/', component:''},
+    {path:'/child', component:ChildPage},
 
-    {path:'/', component:''}
+    {path:'/parent', component:ParentPage}
 ]
 
 const router = createRouter({
